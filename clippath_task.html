@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clippath</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clip {
+            height: 800px;
+            width: 100%;
+           background-image: url(imgs/OIP\ \(7\).jpeg);
+           clip-path: polygon(100% 0, 100% 74%, 50% 94%, 50% 94%, 0 75%, 0% 0%);
+           background-repeat: no-repeat;
+            background-size: cover;
+            /* position: relative; */
+            /* position: absolute;1 */
+        }
+        #navbar {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .home {
+            color: red;
+            text-decoration: underline;
+        }
+        .logo {
+            height: 30px;
+            width: 90px;
+            border: 2px solid white;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .L {
+            height: 30px;
+            width: 30px;
+            font-size: 25px;
+            text-align: center;
+            background-color: #ffffff;
+            color: black;
+        }
+        .ogo {
+            font-size: 25px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 60px;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+        a {
+            font-size: 29px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Poppins";
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            gap: 30px;
+        }
+        #navbar > .logo > p {
+            width: 150px;
+            padding: 5px;
+        }
+        ::placeholder {
+            color: white;
+            font-size: 15px;
+        }
+        #texts {
+            padding-top: 170px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+            
+        }
+        .contain {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .gray {
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            padding: 3px;
+            background-color: gray;
+            color: black;
+        }
+        .red {
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            padding: 3px;
+            background-color: lightcoral;
+            color: black;
+        }
+        .text-p {
+            color: #ffffff;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+        h3 {
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-size: 60px;
+        }
+
+        .lorem-p {
+            width: 500px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 22px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .btn1 {
+            height: 40px;
+            width: 200px;
+            background-color: lightcoral;
+            color: white;
+            padding: 10px;
+            border: 1px solid white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .btn2 {
+            height: 40px;
+            width: 200px;
+            color: white;
+            padding: 10px;
+            border: 1px solid white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;  
+        }
+        .aero {
+            height: 50px;
+            width: 50px;
+            margin-top:-90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+            background-color: blanchedalmond;
+            color: black;
+            /* border: 2px solid; */
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="clip">
+            <div id="navbar">
+                <div class="logo">
+                    <div class="L">L</div>
+                    <div class="ogo">OGO</div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="" class="home">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contect</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contain">
+                <div class="gray">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                
+                <div id="texts">
+                    <div class="text">
+                        <p class="text-p">Our Clients Are Our First Priority</p>
+                    </div>
+                    <div class="welcome">
+                        <h3>WELCOME TO SKY</h3>
+                    </div>
+                    <div class="lorem">
+                        <p class="lorem-p">Lorem, ipsum dolor sit amet consecteturadipisicing elit. Quas beatae suscipit officiis perspiciatis vero dignissimos, dolores adipisci at impedit nemo illo a nobis magnam eum.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="btns">
+                        <div class="btn1">Get Started Now</div>
+                        <div class="btn2">Learn More</div>
+                    </div>
+                </div>
+
+                <div class="red">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+                
+            </div>
+
+        </div>
+
+            <div class="icon">
+                <div class="aero">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+             </div>       
+    </div>
+</body>
+</html>

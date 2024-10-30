@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div with grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main {
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            padding: 50px;
+            gap: 20px;
+            
+        }
+        .child1 {
+            height: 400px;
+            width: 300px;
+            padding: 30px;
+            background-color: aqua;
+            color: black;
+        }
+        .a1{
+            font-size: 25px;
+            font-weight: 20px;
+        }
+        .a2 {
+            font-size: 15px;
+            font-weight: 10px;
+            padding-top: 20px;
+        }
+
+        .child2 {
+            height: 400px;
+            width: 300px;
+            padding: 30px;
+            background-color: aqua;
+            color: black;
+        }
+        .b1{
+            font-size: 25px;
+            font-weight: 20px;
+        }
+        .b2 {
+            font-size: 15px;
+            font-weight: 10px;
+            padding-top: 20px;
+        }
+        .child3 {
+            height: 400px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            flex-direction: column;
+            padding: 20px;
+            gap: 30px;
+        }
+        .c1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            /* flex-direction: column; */
+        }
+        .c1-1 {
+            height: 25px;
+            width: 80px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+        }
+        .c1-2 {
+            height: 25px;
+            width: 80px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+        }
+        .c1-3 {
+            height: 25px;
+            width: 80px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+        }
+        .c1-4 {
+            height: 25px;
+            width: 80px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+        }
+        .c2 {
+            height: 25px;
+            width: 400px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="child1">
+            <div class="a1">
+                <h2 class="a1-h2">First Artical</h2>
+            </div>
+            <div class="a2">
+                <p class="a2-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non doloribus, illum velit, dolores amet nulla, quidem doloremque quis molestiae quo! Itaque eligendi enim inventore! Hic ipsa accusantium exercitationem amet aut ratione, nostrum explicabo, odit sit ipsam quisquam quasi illo deserunt rerum quae. Nostrum dolorem non dolores repellat et veritatis.</p>
+            </div>
+        </div>
+
+        <div class="child2">
+            <div class="b1">
+                <h2 class="b1-p"> Second Artical</h2>
+            </div>
+            <div class="b2">
+                <p class="b2-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non doloribus, illum velit, dolores amet nulla, quidem doloremque quis molestiae quo! Itaque eligendi enim inventore! Hic ipsa accusantium exercitationem amet aut ratione, nostrum explicabo, odit sit ipsam quisquam quasi illo deserunt rerum quae. Nostrum dolorem non dolores repellat et veritatis.</p>
+            </div>
+        </div>
+
+        <div class="child3">
+            <div class="c1">
+                <div class="c1-1">
+                    <p>Smile</p>
+                </div>
+                <div class="c1-2">
+                    <p>Laugh</p>
+                </div>
+                <div class="c1-3">
+                    <p>Wink</p>
+                </div>
+                <div class="c1-4">
+                    <p>Shrug</p>
+                </div>
+            </div>
+            <div class="c2">
+                <p>Blush</p>
+            </div>
+            <div class="c3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi corporis reiciendis fuga nostrum magni similique, perferendis necessitatibus, ex, fugit in officiis dicta amet ipsum ullam? Quod, cupiditate quasi natus nihil illo doloremque labore, vitae molestias possimus, mollitia dolorum expedita! Omnis sapiente a provident? Non sunt vero fugiat molestiae quis.</p>
+            </div>
+            <div class="c4">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio accusamus possimus qui repellat corrupti sequi maiores. Sint quisquam quibusdam reiciendis ut iusto temporibus sequi, tempore saepe eum est quis quos voluptas culpa! Temporibus, sed sint perspiciatis omnis quia quae fugiat repudiandae nihil vel tenetur neque ad alias, eveniet in dolores.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

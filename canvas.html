@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Shapes</title>
+    <style>
+        canvas {
+            border: 2px solid #D2A25F; /* Outer border color */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="300">
+
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+
+            // Red square with gradient
+            const gradient1 = ctx.createLinearGradient(50, 100, 150, 100);
+            gradient1.addColorStop(0, "red");
+            gradient1.addColorStop(1, "orange");
+            ctx.fillStyle = gradient1;
+            ctx.fillRect(50, 100, 100, 100); // Left square
+
+            // Circle with colorful stripes
+            ctx.beginPath();
+            ctx.arc(300, 150, 50, 0, 2 * Math.PI);
+            const gradient2 = ctx.createLinearGradient(250, 100, 350, 200);
+            gradient2.addColorStop(0, "yellow");
+            gradient2.addColorStop(0.2, "orange");
+            gradient2.addColorStop(0.4, "red");
+            gradient2.addColorStop(0.6, "purple");
+            gradient2.addColorStop(0.8, "blue");
+            gradient2.addColorStop(1, "lightblue");
+            ctx.fillStyle = gradient2;
+            ctx.fill();
+            ctx.closePath();
+
+            // Orange rectangle on the right
+            ctx.fillStyle = "rgba(255, 165, 0, 0.7)";
+            ctx.fillRect(400, 100, 120, 100); // Right rectangle
+        </script>
+    </canvas>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Shapes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            padding: 20px;
+            border: 1px solid #a05a2c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myCanvas" width="600" height="200"></canvas>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw the gradient rectangle on the left
+        const gradRect = ctx.createLinearGradient(50, 50, 150, 150);
+        gradRect.addColorStop(0, "red");
+        gradRect.addColorStop(1, "orange");
+        ctx.fillStyle = gradRect;
+        ctx.fillRect(50, 50, 100, 100);
+
+        // Draw the gradient circle in the middle
+        const gradCircle = ctx.createRadialGradient(300, 100, 10, 300, 100, 50);
+        gradCircle.addColorStop(0, "red");
+        gradCircle.addColorStop(1, "blue");
+        ctx.beginPath();
+        ctx.arc(300, 100, 50, 0, Math.PI * 2, false);
+        ctx.fillStyle = gradCircle;
+        ctx.fill();
+
+        // Draw the yellow rectangle on the right
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(450, 50, 100, 100);
+    </script>
+</body>
+</html>

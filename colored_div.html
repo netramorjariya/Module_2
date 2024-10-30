@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored divs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main {
+            position: relative;
+        }
+        .header {
+            height: 50px;
+            width: 300px;
+            color: aliceblue;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        .menu {
+            height: 50px;
+            width: 1235px;
+            background-color: red;
+            font-size: 25px;
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 300px;
+            position: absolute;
+        }
+        .hero {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(135, 196, 250);
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin-top: 50px;
+            position: absolute;
+        }
+        .main {
+            height: 350px;
+            width: 700px;
+            background-color: darkblue;
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 350px;
+            position: absolute;
+        }
+        .white {
+            height: 350px;
+            width: 500px;
+            background-color: white;
+            margin-top: 350px;
+            margin-left: 700px;
+            position: absolute;
+        }
+        .image {
+            height: 175px;
+            width: 335px;
+            background-color: lightcoral;
+            color: black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-top: 350px;
+            margin-left: 1200px;
+            position: absolute;
+            /* display: none; */
+        }
+        .extra {
+            height: 175px;
+            width: 335px;
+            background-color: lightgreen;
+            color: black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-top: 525px;
+            margin-left: 1200px;
+            position: absolute;
+        }
+        .banner {
+            height: 125px;
+            width: 100%;
+            color: aliceblue;
+            background-color: goldenrod;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-top: 700px;
+            position: absolute;
+        }
+
+        /* ----------------------------media quarry for tablet view --------------------------  */
+         @media only screen and (max-width:768px) {
+            #main {
+            position: relative;
+        }
+        .header {
+            height: 50px;
+            width: 1000px;
+            font-size: 25px;
+            color: aliceblue;
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+        }
+        .hero {
+            height: 300px;
+            width: 1000px;
+            background-color: rgb(135, 196, 250);
+            color: aliceblue;
+            text-align: center;
+            padding: 90px;
+            font-size: 40px;
+            margin-top: 50px;
+            position: absolute;
+        }
+         .menu {
+            height: 600px;
+            width: 300px;
+            background-color: red;
+            font-size: 35px;
+            color: aliceblue;
+            text-align: center;
+            padding-top: 300px;
+            margin-top: 350px;
+            margin-left: -1px;
+            position: absolute;
+        }
+        .main {
+            height: 300px;
+            width: 700px;
+            background-color: darkblue;
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            padding: 130px;
+            margin-left: 300px;
+            margin-top: 350px;
+            position: absolute;
+        }
+        .white {
+            height: 350px;
+            width: 500px;
+            background-color:aliceblue;
+            margin-top: 350px;
+            margin-left: 700px;
+            display: none;
+            position: absolute;
+        }
+        .banner {
+            height: 125px;
+            width: 700px;
+            color: black;
+            background-color: goldenrod;
+            text-align: center;
+            padding: 40px;
+            font-size: 30px;
+            margin-left: 300px;
+            margin-top: 650px;
+            position: absolute;
+        } 
+        .extra {
+            height: 175px;
+            width: 500px;
+            background-color: lightgreen;
+            color: black;
+            text-align: center;
+            padding: 60px;
+            font-size: 30px;
+            margin-top: 775px;
+            margin-left: 300px;
+            /* margin-left: 300px; */
+            /* margin-left: 1200px;  */
+            position: absolute;
+        }
+        .image {
+            height: 175px;
+            width: 200px;
+            background-color: lightcoral;
+            color: black;
+            text-align: center;
+            padding: 60px;
+            font-size: 30px;
+            margin-top: 775px;
+            margin-left: 800px;
+            position: absolute;
+        }
+    }         
+
+       
+        /* ----------------------------media quarry for mobile view --------------------------  */
+
+        /* @media only screen and (max-width:340px) {
+            #main {
+            position: relative;
+        }
+        .header {
+            height: 100px;
+            width: 340px;
+            font-size: 50px;
+            color: aliceblue;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        .menu {
+            height: 100px;
+            width: 340px;
+            background-color: red;
+            font-size: 50px;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 0px;
+             position: absolute; 
+        }
+        .hero {
+            height: 200px;
+            width: 340px;
+            background-color: rgb(135, 196, 250);
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            margin-top: 200px;
+            position: absolute;
+        }
+         
+        .main {
+            height: 200px;
+            width: 340px;
+            background-color: darkblue;
+            color: aliceblue;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 400px;
+            position: absolute;
+        }
+        .banner {
+            height: 100px;
+            width: 340px;
+            color: aliceblue;
+            background-color: goldenrod;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            font-size: 50px;
+            margin-left: 0px;
+            margin-top: 600px;
+            position: absolute;
+        } 
+        .extra {
+            height: 150px;
+            width: 340px;
+            background-color: lightgreen;
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            font-size: 50px;
+            margin-top: 700px;
+            margin-left: 0px;
+            position: absolute;
+        }
+        .image {
+            height: 150px;
+            width: 340px;
+            background-color: lightcoral;
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            font-size: 50px;
+            margin-top: 850px;
+            margin-left: 0px;
+            position: absolute;
+        }
+        } */
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+         <div class="hero">Hero</div>
+         <div class="main">Main</div>
+        <div class="white"></div>
+       <div class="image">Image</div> 
+        <div class="extra">Extra</div>
+        <div class="banner">Banner</div>
+    </div>
+</body>
+</html>

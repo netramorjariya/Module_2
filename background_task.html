@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        #main {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .text {
+            height: 700px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex-direction: column;
+            gap: 60px;
+        }
+        .child1 {
+            height: 700px;
+            width: 60%;
+            background-color: darkslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+            /* padding-top: 30px;   */
+        }
+        .our {
+            height: 60px ;
+            width: auto;
+            padding-right: 20px;
+            background-color: darkslategray;
+            border-right: 4px solid red;
+
+            
+        }
+        .ourservice  {
+            text-align: right;
+            font-size:50px;
+            font-weight: bold;
+
+        }
+        .head {
+            color: red;
+            text-align: right;
+            font-size: 35px;
+            /* padding: 0 10px 0 0; */
+        }
+        .lorem {
+            text-align: right;
+            font-size: 35px;
+        }
+        .child2 {
+            height: 700px;
+            width: 40%;
+            background-image: url(imgs/laptop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+        }
+        /* .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        } */
+        .icon1 {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: aliceblue;
+            margin-left: -40px;
+            margin-top: -300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .icon2 {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: aliceblue;
+            margin-left: -40px;
+            margin-bottom: -60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon3 {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: aliceblue;
+            margin-left: -40px;
+            margin-bottom: -470px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div class="child1">
+            <div class="text">
+                <div class="our"><p class="ourservice">Our services</p></div>
+                <div>
+                    <p class="head">Web design</p>
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eius repudiandae.</p>
+                    <!-- <i class="fa-solid fa-computer"></i> -->
+                </div>
+
+                <div >
+                    <p class="head">Pint Design</p>
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eius repudiandae.</p>
+                    <!-- <i class="fa-solid fa-paint-roller"></i> -->
+                </div>
+
+                <div>
+                    <p class="head">Photography</p>
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eius repudiandae.</p>
+                   <!-- <i class="fa-solid fa-camera-retro"></i> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="child2">
+                <div class="icon1">
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>

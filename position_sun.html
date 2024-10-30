@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sun</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0 ;
+            box-sizing: border-box;
+        }
+        #main {
+            height: 900px;
+            width: 1600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(darkgoldenrod, rgba(0, 0, 0, 0.87));
+            position: relative;
+
+        }
+        .one {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: yellow;
+            /* filter: brightness(70%); */
+            position: absolute;
+        }
+        .two {
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            background-color: darkorange;
+            position: absolute;
+            filter: brightness(90%);
+            margin: 0 20px 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

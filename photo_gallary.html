@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        #main {
+            display: flex;
+            padding: 10px;
+        }
+
+        .gallary{
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 20px;
+            background-color: black;
+            padding: 20px;
+        }
+
+        img{
+            width: 100%;
+            height: 182px;
+        }
+
+
+        .child1 {
+            grid-column: 1 / span 4;
+            grid-row: 1;
+        }
+
+        .child2 {
+            grid-column: 5 / span 2;
+            grid-row: 1;
+        }   
+        .child3 {
+            grid-column: 1 ;
+            grid-row: 2;
+        }
+
+        .child4 {
+            grid-column: 2 / span 4;
+            grid-row: 2;
+        }
+
+        .child5 {
+            grid-column: 6;
+            grid-row: 2;
+        }
+
+        .child6 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+        }
+        .child7 {
+            grid-column: 4 / span 3;
+            grid-row: 3;
+        }
+        .child8 {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+        .child9 {
+            grid-column: 3 / span 2;
+            grid-row: 4;
+        }
+
+        .child10 {
+            grid-column: 5 / span 2;
+            grid-row: 4;
+        }
+       
+        .menuright {
+            height: 870px;
+            width: 360px;
+            padding: 20px;
+            padding-bottom: 400px;
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: end;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .head {
+            color: aliceblue;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex-direction: column;
+            text-align: end; 
+            gap: 20px;
+        } 
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            text-decoration: none;
+            color: aliceblue;
+            
+        }
+        .icons {
+            width: 400px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="gallary">
+            <div class="child1"><img src="imgs/OIP (1).jpeg" alt=""></div>
+            <div class="child2"><img src="imgs/dog1.jpeg" alt=""></div>
+            <div class="child3"><img src="imgs/OIP (2).jpeg" alt=""></div>
+            <div class="child4"><img src="imgs/dog2.jpeg" alt=""></div>
+            <div class="child5"><img src="imgs/OIP (3).jpeg" alt=""></div>
+            <div class="child6"><img src="imgs/dog3.jpeg" alt=""></div>
+            <div class="child7"><img src="imgs/OIP (4).jpeg" alt=""></div>
+            <div class="child8"><img src="imgs/OIP (5).jpeg" alt=""></div>
+            <div class="child9"><img src="imgs/nature1.jpeg" alt=""></div>
+            <div class="child10"><img src="imgs/download.jpeg" alt=""></div>
+        </div>
+
+        <div class="menuright">
+            <div class="head">
+                <h3>SHUTTER</h3>
+            </div>
+
+            <div class="menu">
+                <a href="" style="color: red;">HOME</a>
+                <a href="">PHOTO</a>
+                <a href="">BIO</a>
+                <a href="">BLOG</a>
+                <a href="">CONTACT</a>
+            </div>
+            <div class="icons">
+                <div class="A3-logo1"><i class="fa-brands fa-instagram"></i></div>
+                <div class="A3-logo2"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="A3-logo3"><i class="fa-brands fa-facebook"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

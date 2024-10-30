@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waves</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(imgs/black_bg.jpg!w700wp);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+        }
+        .wave{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0; 
+        }
+        .text {
+            font-family: Arial, sans-serif;
+            display: flex;
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;  
+            padding: 190px;  
+        }
+        h2 {
+           font-size: 55px;
+        }
+        .headlorem {
+            font-size: 30px;
+        }
+        .imgs{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 290px;
+
+        }
+        .img1 img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 135px;  
+        }
+        .img2 img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-top: 5px; 
+            position: absolute;
+            margin-top: 60px;
+        }
+        .img3 img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-top: 160px;
+            position: absolute;
+        }
+        .img4 img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 170px;
+        }
+        .img4 h3{
+            color: white;
+            position: absolute;
+            margin-top: 250px;
+            margin-left: -40px;
+            font-family: Arial, sans-serif;
+            letter-spacing: 2px;
+        }
+        .img4 p{
+            color: white;
+            position: absolute;
+            margin-top: 280px;
+            margin-left: -30px;
+            font-family: Arial, sans-serif;
+            font-size: larger;
+        }
+        .img5 img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 30px;
+
+        }
+   
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="text">
+            <h2>Our Team</h2>
+            <p class="headlorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusamus!</p>
+        </div>
+    </div>
+         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="lightgray" fill-opacity="0.5"  d="M0,320L48,288C96,256,192,192,288,154.7C384,117,480,107,576,138.7C672,171,768,245,864,250.7C960,256,1056,192,1152,144C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    <div class="imgs">
+        <div class="img1">
+            <img src="imgs/OIP (1).jpeg" alt="" class="src">
+        </div>
+
+        <div class="img2">
+            <img src="imgs/OIP (2).jpeg" alt="" class="src">
+        </div>
+
+        <div class="img3">
+            <img src="imgs/OIP (3).jpeg" alt="" class="src">
+        </div>
+
+        <div class="img4">
+            <img src="imgs/OIP (4).jpeg" alt="" class="src">
+
+            <h3>Web Designer</h3>
+            <p>UI/UX Designer</p>
+        </div>
+
+        <div class="img5">
+            <img src="imgs/OIP (5).jpeg" alt="" class="src">
+        </div>
+    </div>
+</body>
+</html>
